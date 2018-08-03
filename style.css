@@ -19,7 +19,15 @@ p {
 
 *{box-sizing: border-box;}
 
-body{background: lightcyan}
+body{background: lime-200}
+
+#mainFAB {
+    z-index: 99;
+}
+
+.mdl-cell {
+    z-index: 80;
+}
 
 .cardContainer {
     width: 100%;
