@@ -19,8 +19,7 @@
 <body>
     <!-- The drawer is always open in large screens. The header is always shown,
   even in small screens. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
-            mdl-layout--fixed-header">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-color--light-blue-400">
             <div class="mdl-layout__header-row">
                 <div class="mdl-layout-spacer mdl-color--white-400"><h3>Collabo</h3></div>
@@ -50,53 +49,90 @@
         <main class="mdl-layout__content">
             <br class="page-content">
             <!-- Your content goes here -->
-            <div class="cardContainer">
 
-                <div class="mmCardNoVid shadow4 shadow6h bOWhite1">
-                    <div class="mdl-card__title">
-                        <h3 class="mdl-card__title-text">MATH332: How do you use eigenvectors and values?</h3>
-                        <span class="mdl-chip mdl-chip--contact">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+                <div class="mdl-card__title">
+                    <h3 class="mdl-card__title-text">MATH332: How do you use eigenvectors and values?</h3>
+                    <span class="mdl-chip mdl-chip--contact">
                             <span class="mdl-chip__contact mdl-color--cyan mdl-color-text--white">S</span>
                             <span class="mdl-chip__text">Sammy T</span>
                         </span>
-                    </div>
-                    <div class="cardActionBar">
-                        <a href="" class="cardActionMain">ANSWER</a>
-                        <a href="" class="cardActionOther">COMMENT</a>
-                    </div>
                 </div>
+                <div class="mdl-card__actions">
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                        Answer
+                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                        Comment
+                    </a>
+                    <!--Read More Button
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                        <i class="material-icons">chevron_right</i>
+                    </a>-->
+                </div>
+            </div>
 
-                <div class="mmCardYesAns shadow4 shadow6h bOWhite1">
-                    <div class="mdl-card__title">
-                        <h3 class="mdl-card__title-text">CS487: How do you implement object-oriented design?</h3>
-                        <span class="mdl-chip mdl-chip--contact">
-                            <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white">E</span>
-                            <span class="mdl-chip__text">Adam J</span>
+            <!--another card-->
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+                <div class="mdl-card__title">
+                    <h3 class="mdl-card__title-text">CS487: How do you implement object-oriented design?</h3>
+                    <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--cyan mdl-color-text--white">S</span>
+                            <span class="mdl-chip__text">Sammy T</span>
                         </span>
-
-                    </div>
+                </div>
+                <div class="mdl-card__media">
                     <iframe class="mmCardVid" src="https://www.youtube.com/embed/fJW65Wo7IHI" allowfullscreen></iframe>
-                    <div class="mdl-card__supporting-text">
+                </div>
+                <div class="mdl-card__supporting-text">
                         <span class="mdl-chip mdl-chip--contact">
                             <span class="mdl-chip__contact mdl-color--lime mdl-color-text--white">E</span>
                             <span class="mdl-chip__text">Emily W, IIT</span>
                         </span>
-                        <br>
-                        You do it by describing the situation and things become objects, attributes of those things are the attributes in code, and things that are done are methods.
-                    </div>
-                    <div class="mdl-card__supporting-text">
+                    <br>
+                    You do it by describing the situation and things become objects, attributes of those things are the attributes in code, and things that are done are methods.
+                </div>
+                <div class="mdl-card__supporting-text">
                         <span class="mdl-chip mdl-chip--contact">
                             <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white">K</span>
                             <span class="mdl-chip__text">Kevin V, MIT</span>
                         </span>
-                        <br>
-                        Another way is to draw out a picture of everything. The things you see are objects, etc. <a href="http://www.selectbs.com/process-maturity/what-is-object-oriented-design">Here's a web link to learn more.</a>
-                    </div>
-                    <div class="cardActionBar">
-                        <a href="" class="cardActionMain">ANSWER</a>
-                        <a href="" class="cardActionOther">COMMENT</a>
-                    </div>
+                    <br>
+                    Another way is to draw out a picture of everything. The things you see are objects, etc. <a href="http://www.selectbs.com/process-maturity/what-is-object-oriented-design">Here's a web link to learn more.</a>
                 </div>
+                <div class="mdl-card__actions">
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                        Answer
+                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                        Comment
+                    </a>
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+                <div class="mdl-card__title">
+                    <h3 class="mdl-card__title-text">CS455: Does anyone understand this video about how to make parse trees?</h3>
+                    <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--cyan mdl-color-text--white">S</span>
+                            <span class="mdl-chip__text">Alex M</span>
+                        </span>
+                </div>
+                <div class="mdl-card__media">
+                    <iframe class="mmCardVid" src="https://www.youtube.com/embed/9H0-YodumKQ" allowfullscreen></iframe>
+                </div>
+                <div class="mdl-card__actions">
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                        Answer
+                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                        Comment
+                    </a>
+                </div>
+            </div>
+
+            <div class="cardContainer">
+
 
                 <div class="mmCardNoAns shadow4 shadow6h bOWhite1">
                     <div class="mdl-card__title">
