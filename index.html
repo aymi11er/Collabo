@@ -49,7 +49,6 @@
         <main class="mdl-layout__content">
             <br class="page-content">
             <!-- Your content goes here -->
-            
             <div id="writeCards">
 
             </div>
@@ -58,7 +57,7 @@
                 <div class="mdl-card__title">
                     <h3 class="mdl-card__title-text">MATH332: How do you use eigenvectors and values?</h3>
                     <span class="mdl-chip mdl-chip--contact">
-                            <span class="mdl-chip__contact mdl-color--cyan mdl-color-text--white">S</span>
+                            <img class="mdl-chip__contact" src="user.jpg"></img>
                             <span class="mdl-chip__text">Sammy T</span>
                         </span>
                 </div>
@@ -81,8 +80,8 @@
                 <div class="mdl-card__title">
                     <h3 class="mdl-card__title-text">CS487: How do you implement object-oriented design?</h3>
                     <span class="mdl-chip mdl-chip--contact">
-                            <span class="mdl-chip__contact mdl-color--cyan mdl-color-text--white">S</span>
-                            <span class="mdl-chip__text">Sammy T</span>
+                            <span class="mdl-chip__contact mdl-color--lime mdl-color-text--white">T</span>
+                            <span class="mdl-chip__text">Ty Y</span>
                         </span>
                 </div>
                 <div class="mdl-card__media">
@@ -118,7 +117,7 @@
                 <div class="mdl-card__title">
                     <h3 class="mdl-card__title-text">CS455: Does anyone understand this video about how to make parse trees?</h3>
                     <span class="mdl-chip mdl-chip--contact">
-                            <span class="mdl-chip__contact mdl-color--cyan mdl-color-text--white">S</span>
+                            <img class="mdl-chip__contact" src="user.jpg"></img>
                             <span class="mdl-chip__text">Alex M</span>
                         </span>
                 </div>
@@ -139,7 +138,7 @@
                 <div class="mdl-card__title">
                     <h3 class="mdl-card__title-text">Algorithms: What is the best known search alogrithm?</h3>
                     <span class="mdl-chip mdl-chip--contact">
-                            <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white">S</span>
+                            <img class="mdl-chip__contact" src="user.jpg"></img>
                             <span class="mdl-chip__text">Adam Y</span>
                         </span>
                 </div>
@@ -158,8 +157,12 @@
                     <h3 class="mdl-card__title-text">Welcome to your feed, click the + button to add your first question.</h3>
                 </div>
             </div>
-            
-            
+
+            <!--FAB
+            <button id="mainFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="funct()">
+                <i class="material-icons">add</i>
+            </button>-->
+
             <a id="mainFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" onclick="funct()">
                 <i class="material-icons">add</i>
             </a>
@@ -191,10 +194,12 @@
             /* Modal Content */
             .modal-content {
             background-color: #fefefe;
+            text-align: center;
             margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 80%;
+            padding-bottom: 40px;
+            width: 90%;
             }
 
             /* The Close Button */
@@ -222,113 +227,73 @@
 
                 <!-- Left aligned menu below button -->
                 <div id="modalContent1">
-                <br>
-                <h5 id="post2course">Post to CS487</h5>
-                <button id="demo-menu-lower-left"
-                        class="mdl-button mdl-js-button mdl-button--icon">
-                    <i class="material-icons">more_vert</i>
-                </button>
-
-                <style>
-
-                    .modal-content {
-                        height: 75%;
-                        width: 90%;
-                    }
-                    #post2course {
-                        position: fixed;
-                        color: rgba(0, 0, 0, 0.95);
-                        left: 20%;
-                        top: 15%;
-                    }
-
-                    #demo-menu-lower-left {
-                        position: fixed;
-                        color: #000000;
-                        left: 10%;
-                        top: 18%;
-                    }
-                </style>
-
-                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-                    for="demo-menu-lower-left">
-                    <li class="mdl-menu__item">CS455</li>
-                    <li class="mdl-menu__item">COM424</li>
-                    <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">MATH332</li>
-                    <li class="mdl-menu__item">Programming Languages Universal</li>
-                    <li class="mdl-menu__item">Linear Algebra Universal</li>
-                </ul>
 
                 <div id="whatIsQ">
                     <h4>What is your question?</h4>
-                    <!-- Floating Multiline Textfield -->
                     <!-- Simple Textfield -->
                     <form action="#">
                         <div class="mdl-textfield mdl-js-textfield">
                             <input class="mdl-textfield__input" type="text" id="questionInput">
-                            <label class="mdl-textfield__label" for="sample1">Start with what, why, how...</label>
+                            <label class="mdl-textfield__label">Start with what, why, how...</label>
                         </div>
                     </form>
                 </div>
-                <br>
 
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--lime-A400">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--lime-500">
                     Attach Files
                 </button>
-                
+                <br>
+                <br>
 
                 <!--post to public class?-->
-
-                <br>
-                <br>
                 <div>
-                <h5>Post to public course </h5>
-                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
-                    <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
-                    <span class="mdl-switch__label"></span>
-                </label>
-                </div>
-
-                <br>
-                <button id="next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue-400" onclick="functnext()">
-                    Continue
+                <h5 id="post-to-course">Posting to...</h5>
+                <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">more_vert</i>
                 </button>
-                </div> <!--end modal content 1-->
 
-                <!-- Left aligned menu below button -->
-                <div id="modalContent2">
-                    <br>
-                    <h5 id="post2course">Post to CS487</h5>
-                    <button id="demo-menu-lower-left"
-                            class="mdl-button mdl-js-button mdl-button--icon">
-                        <i class="material-icons">more_vert</i>
-                    </button>
+                <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                    for="demo-menu-lower-right" id="courseMenu">
+                    <li class="mdl-menu__item" value="CS487">CS487</li>
+                    <li class="mdl-menu__item" value="CS455">CS455</li>
+                    <li class="mdl-menu__item" value="CS487 & SWE Universal">CS487 & SWE Universal</li>
+                    <li class="mdl-menu__item" value="SWE Universal">SWE Universal</li>      
+                </ul>
+                <style>
+                    #post-to-course, #demo-menu-lower-right {
+                        display:inline-block;
+                    }
 
-                    <style>
+                    #answerFrom, #postQ {
+                        display: block;
+                        align-self: center;
+                    }
+                </style>
 
-                        .modal-content {
-                            height: 75%;
-                            width: 90%;
-                        }
-                        #post2course {
-                            position: fixed;
-                            color: rgba(0, 0, 0, 0.95);
-                            left: 20%;
-                            top: 15%;
-                        }
+                <h5 id="answerFrom">Request answer from...</h5>
+                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable" id="chip1">
+                    <img class="mdl-chip__contact" src="user.jpg"></img>
+                    <span class="mdl-chip__text">Professor Adams</span>
+                    <a href="#" class="mdl-chip__action" onclick=delchip1()><i class="material-icons">cancel</i></a>
+                </span>
+                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
+                    <img class="mdl-chip__contact" src="user.jpg"></img>
+                    <span class="mdl-chip__text">TA Hannah J</span>
+                    <a href="#" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
+                </span>
+                <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
+                    <img class="mdl-chip__contact" src="user.jpg"></img>
+                    <span class="mdl-chip__text">Hassah K</span>
+                    <a href="#" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
+                </span>
+                <br>
+                <br>
 
-                        #demo-menu-lower-left {
-                            position: fixed;
-                            color: #000000;
-                            left: 10%;
-                            top: 18%;
-                        }
-                    </style>
-
-                    <button id="next" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--light-blue-400" onclick="done()">
-                        Post Question
-                    </button>
-                </div> <!--end modal content 2-->
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--lime-500" onclick="done()">
+                    Post Question
+                </button>
+                </div>
+                <!--end modal-->
             </div>
             </div>
 
@@ -339,11 +304,8 @@
             // Get the modal
                var modal = document.getElementById('myModal');
 
-            // Get modal content
+            // Get modal content 1
                var modalContent1 = document.getElementById('modalContent1');
-
-                // Get modal content
-                var modalContent2 = document.getElementById('modalContent1');
 
             // Get the button that opens the modal
                var btn = document.getElementById("mainFAB");
@@ -355,13 +317,13 @@
             btn.onclick = function() {
                 modal.style.display = "block";
                 modalContent1.style.display = "block";
-            }
+            };
 
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
                 modal.style.display = "none";
                 modalContent1.style.display = "none";
-            }
+            };
 
             // When the user clicks anywhere outside of the modal, close it
             function funct() {
@@ -377,10 +339,10 @@
 
             function done() {
                 // Get the document to write new question to
-                var question = "CS430: What's the best graph traversal algorithm?"
+                var question = document.getElementById("questionInput").value;
                 var str = "<div class=\"mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp\">\n" +
                     "                <div class=\"mdl-card__title\">\n" +
-                    "                    <h3 class=\"mdl-card__title-text\">"+question+"</h3>\n" +
+                    "                    <h3 class=\"mdl-card__title-text\">"+"CS487: "+question+"</h3>\n" +
                     "                    <span class=\"mdl-chip mdl-chip--contact\">\n" +
                     "                            <span class=\"mdl-chip__contact mdl-color--lime mdl-color-text--white\">Y</span>\n" +
                     "                            <span class=\"mdl-chip__text\">You</span>\n" +
@@ -394,11 +356,9 @@
                     "                        Comment\n" +
                     "                    </a>\n" +
                     "                </div>\n" +
-                    "            </div>"
+                    "            </div>";
                 var cards = document.getElementById("writeCards").innerHTML = str;
                 modal.style.display = "none";
-                modalContent2.style.display = "none";
-                document.write
             }
             </script>
 
