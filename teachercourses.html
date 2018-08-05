@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Collabo allows students to collaborate across the country.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Collabo App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js">       </script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+<!-- The drawer is always open in large screens. The header is always shown,
+even in small screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-color--light-blue-400">
+        <div class="mdl-layout__header-row">
+            <div class="mdl-layout-spacer mdl-color--white-400"><h3>Collabo</h3></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Ariel Muller</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Feed</a>
+            <a class="mdl-navigation__link" href="https://marvelapp.com/5daag7j/screen/46284608">Courses</a>
+            <a class="mdl-navigation__link" href="">Notifications</a>
+            <a class="mdl-navigation__link" href="https://marvelapp.com/5daag7j/screen/46283255">Profile</a>
+            <a class="mdl-navigation__link" href="">Settings</a>
+            <a class="mdl-navigation__link" href="https://marvelapp.com/5daag7j/screen/46187794">Sign In</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <br class="page-content">
+        <!-- Your content goes here -->
+        <div id="writeCards">
+
+        </div>
+
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title">
+                <h3 class="mdl-card__title-text">MATH332: How do you use eigenvectors and values?</h3>
+                <span class="mdl-chip mdl-chip--contact">
+                            <img class="mdl-chip__contact" src="user.jpg"></img>
+                            <span class="mdl-chip__text">Sammy T</span>
+                        </span>
+            </div>
+            <div class="mdl-card__actions">
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                    Answer
+                </a>
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                    Comment
+                </a>
+                <!--Read More Button
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                    <i class="material-icons">chevron_right</i>
+                </a>-->
+            </div>
+        </div>
+
+        <!--another card-->
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title">
+                <h3 class="mdl-card__title-text">CS487: How do you implement object-oriented design?</h3>
+                <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--lime mdl-color-text--white">T</span>
+                            <span class="mdl-chip__text">Ty Y</span>
+                        </span>
+            </div>
+            <div class="mdl-card__media">
+                <iframe class="mmCardVid" src="https://www.youtube.com/embed/fJW65Wo7IHI" allowfullscreen></iframe>
+            </div>
+            <div class="mdl-card__supporting-text">
+                        <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--lime mdl-color-text--white">E</span>
+                            <span class="mdl-chip__text">Emily W, IIT</span>
+                        </span>
+                <br>
+                You do it by describing the situation and things become objects, attributes of those things are the attributes in code, and things that are done are methods.
+            </div>
+            <div class="mdl-card__supporting-text">
+                        <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white">K</span>
+                            <span class="mdl-chip__text">Kevin V, MIT</span>
+                        </span>
+                <br>
+                Another way is to draw out a picture of everything. The things you see are objects, etc. <a href="http://www.selectbs.com/process-maturity/what-is-object-oriented-design">Here's a web link to learn more.</a>
+            </div>
+            <div class="mdl-card__actions">
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                    Answer
+                </a>
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                    Comment
+                </a>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title">
+                <h3 class="mdl-card__title-text">CS455: Does anyone understand this video about how to make parse trees?</h3>
+                <span class="mdl-chip mdl-chip--contact">
+                            <img class="mdl-chip__contact" src="user.jpg"></img>
+                            <span class="mdl-chip__text">Alex M</span>
+                        </span>
+            </div>
+            <div class="mdl-card__media">
+                <iframe class="mmCardVid" src="https://www.youtube.com/embed/9H0-YodumKQ" allowfullscreen></iframe>
+            </div>
+            <div class="mdl-card__actions">
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                    Answer
+                </a>
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                    Comment
+                </a>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title">
+                <h3 class="mdl-card__title-text">Algorithms: What is the best known search alogrithm?</h3>
+                <span class="mdl-chip mdl-chip--contact">
+                            <img class="mdl-chip__contact" src="user.jpg"></img>
+                            <span class="mdl-chip__text">Adam Y</span>
+                        </span>
+            </div>
+            <div class="mdl-card__actions">
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
+                    Dismiss
+                </a>
+                <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
+                    Comment
+                </a>
+            </div>
+        </div>
+
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp">
+            <div class="mdl-card__title">
+                <h3 class="mdl-card__title-text">Welcome to your feed, click the + button to add your first question.</h3>
+            </div>
+        </div>
+
+        <!--FAB
+        <button id="mainFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="funct()">
+            <i class="material-icons">add</i>
+        </button>-->
+
+        <a id="mainFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast" onclick="funct()">
+            <i class="material-icons">add</i>
+        </a>
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+        <!--
+        <script>
+            function myFunction() {
+                alert("what is your Q?")
+            }
+        </script>
+        -->
+
+        <style>
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                text-align: center;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                padding-bottom: 40px;
+                width: 90%;
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <!-- Left aligned menu below button -->
+                <div id="modalContent1">
+
+                    <div id="whatIsQ">
+                        <h4>What is your question?</h4>
+                        <!-- Simple Textfield -->
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="questionInput">
+                                <label class="mdl-textfield__label">Start with what, why, how...</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--lime-500">
+                        Attach Files
+                    </button>
+                    <br>
+                    <br>
+
+                    <!--post to public class?-->
+                    <div>
+                        <h5 id="post-to-course">Posting to...</h5>
+                        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons">more_vert</i>
+                        </button>
+
+                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                            for="demo-menu-lower-right" id="courseMenu">
+                            <li class="mdl-menu__item" value="CS487">CS487-01</li>
+                            <li class="mdl-menu__item" value="CS455">CS455-02</li>
+                            <li class="mdl-menu__item" value="CS487 & SWE Universal">CS455-03</li>
+                            <li class="mdl-menu__item" value="SWE Universal">CS491-01</li>
+                        </ul>
+                        <style>
+                            #post-to-course, #demo-menu-lower-right {
+                                display:inline-block;
+                            }
+
+                            #answerFrom, #postQ {
+                                display: block;
+                                align-self: center;
+                            }
+                        </style>
+
+                        <h5 id="answerFrom">Request answer from...</h5>
+                        <span class="mdl-chip mdl-chip--contact mdl-chip--deletable" id="chip1">
+                    <img class="mdl-chip__contact" src="user.jpg"></img>
+                    <span class="mdl-chip__text">TA Hannah J</span>
+                    <a href="#" class="mdl-chip__action" onclick=delchip1()><i class="material-icons">cancel</i></a>
+                </span>
+                        <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
+                    <img class="mdl-chip__contact" src="user.jpg"></img>
+                    <span class="mdl-chip__text">Alexa P</span>
+                    <a href="#" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
+                </span>
+                        <span class="mdl-chip mdl-chip--contact mdl-chip--deletable">
+                    <img class="mdl-chip__contact" src="user.jpg"></img>
+                    <span class="mdl-chip__text">Hassan K</span>
+                    <a href="#" class="mdl-chip__action"><i class="material-icons">cancel</i></a>
+                </span>
+                        <br>
+                        <br>
+
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--lime-500" onclick="done()">
+                            Post Question
+                        </button>
+                    </div>
+                    <!--end modal-->
+                </div>
+            </div>
+
+            <script>
+                // save question
+                var question = "";
+
+                // Get the modal
+                var modal = document.getElementById('myModal');
+
+                // Get modal content 1
+                var modalContent1 = document.getElementById('modalContent1');
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("mainFAB");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal
+                btn.onclick = function() {
+                    modal.style.display = "block";
+                    modalContent1.style.display = "block";
+                };
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                    modal.style.display = "none";
+                    modalContent1.style.display = "none";
+                };
+
+                // When the user clicks anywhere outside of the modal, close it
+                function funct() {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                function functnext() {
+                    question = document.document.getElementsByClassName('mdl-textfield__input')[0].value;
+                    modalContent1.style.display = "none";
+                    modalContent1.style.display = "block";
+                }
+
+                function done() {
+                    // Get the document to write new question to
+                    var question = document.getElementById("questionInput").value;
+                    var str = "<div class=\"mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--6dp\">\n" +
+                        "                <div class=\"mdl-card__title\">\n" +
+                        "                    <h3 class=\"mdl-card__title-text\">"+"CS487-01: "+question+"</h3>\n" +
+                        "                    <span class=\"mdl-chip mdl-chip--contact\">\n" +
+                        "                            <span class=\"mdl-chip__contact mdl-color--lime mdl-color-text--white\">Y</span>\n" +
+                        "                            <span class=\"mdl-chip__text\">You</span>\n" +
+                        "                        </span>\n" +
+                        "                </div>\n" +
+                        "                <div class=\"mdl-card__actions\">\n" +
+                        "                    <a class=\"mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400\" href=\"\">\n" +
+                        "                        Answer\n" +
+                        "                    </a>\n" +
+                        "                    <a class=\"mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect\" href=\"\">\n" +
+                        "                        Comment\n" +
+                        "                    </a>\n" +
+                        "                </div>\n" +
+                        "            </div>";
+                    var cards = document.getElementById("writeCards").innerHTML = str;
+                    modal.style.display = "none";
+                }
+            </script>
+
+
+
+
+
+    </main>
+</div>
+
+
+</body>
+</html>
