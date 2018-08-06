@@ -145,18 +145,6 @@
 
             <!--Javascript to handle answer and comment buttons-->
             <script>
-                // When the user clicks the button, open the modal
-                function modalAnswerComment(ques){
-                    console.log("in modal ans/com");
-                    console.log(ques);
-                    modal.style.display = "block";
-                    modalContent2.style.display = "block";
-                }
-
-                function hello() {
-                    console.log("hi!");
-                }
-
                 document.addEventListener('click', function () {
                     var target = event.target;
                     var answer_buttons = document.getElementsByClassName('answer');
@@ -186,7 +174,7 @@
                         }
                     }
 
-                });
+                }, false);
             </script>
 
             <!--FAB
@@ -324,23 +312,8 @@
                     Post Question
                 </button>
                 </div>
+                <!--end modal-->
             </div>
-                <!--end modal content 1-->
-
-                <div id="modalContent2">
-
-                    <div id="whatIsQ">
-                        <h4>What is your question?</h4>
-                        <!-- Simple Textfield -->
-                        <form action="#">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="questionInput">
-                                <label class="mdl-textfield__label">Start with what, why, how...</label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
             </div>
 
             <script>
@@ -352,9 +325,6 @@
 
             // Get modal content 1
                var modalContent1 = document.getElementById('modalContent1');
-
-            // Get modal content 2
-                var modalContent2 = document.getElementById('modalContent2');
 
             // Get the button that opens the modal
                var btn = document.getElementById("mainFAB");
@@ -405,7 +375,6 @@
                 var cards = document.getElementById("writeCards").innerHTML = str;
                 modal.style.display = "none";
             }
-
             </script>
 
 
