@@ -174,7 +174,7 @@ even in small screens. -->
                 }
             }
 
-        });
+        }, false);
         </script>
 
 
@@ -375,6 +375,35 @@ even in small screens. -->
                         "            </div>";
                     var cards = document.getElementById("writeCards").innerHTML = str;
                     modal.style.display = "none";
+
+                    document.addEventListener('click', function () {
+                        var target = event.target;
+                        var answer_buttons = document.getElementsByClassName('answer');
+                        var comment_buttons = document.getElementsByClassName('comment');
+                        var parent = target.parentNode.textContent;
+
+                        if (parent.match("Answer") || parent.match("Comment")) {
+                        }else{
+                            return;
+                        }
+
+                        //title = document.querySelectorAll("h3")[1].textContent
+                        if (parent === "Answer") {
+                            for (var i = 0; i < answer_buttons.length; i++) {
+                                // If the button is the one clicked, then get siblings
+                                if (answer_buttons[i] === target.parentNode) {
+                                    var head = target.parentNode.parentNode.parentNode.childNodes[1].querySelector("h3").textContent;
+                                    console.log("Answer to "+head);
+                                }
+                            }
+                        } else {
+                            for (var i = 0; i < answer_buttons.length; i++) {
+                                if (answer_buttons[i] === target.parentNode) {
+                                    var head = target.parentNode.parentNode.parentNode.childNodes[1].querySelector("h3").textContent;
+                                    console.log("Comment to "+head);
+                                }
+                            }
+                        }
 
                     }, false);
                 }
