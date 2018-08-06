@@ -36,17 +36,17 @@
                 </div>
             </div>
         </header>
-        <div class="mdl-layout__drawer mdl-color--lime-A200">                                                                        
-            <span class="mdl-layout-title">Ariel Muller</span>                                                  
-            <nav class="mdl-navigation">                                                                        
-                <a class="mdl-navigation__link" href="">Feed</a>                                                
+        <div class="mdl-layout__drawer mdl-color--lime-A200">
+            <span class="mdl-layout-title">Ariel Muller</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Feed</a>
                 <a class="mdl-navigation__link" href="https://marvelapp.com/5daag7j/screen/46030997">Courses</a>
-                <a class="mdl-navigation__link" href="">Notifications</a>                                       
+                <a class="mdl-navigation__link" href="">Notifications</a>
                 <a class="mdl-navigation__link" href="https://marvelapp.com/5daag7j/screen/46283255">Profile</a>
-                <a class="mdl-navigation__link" href="">Settings</a>                                            
+                <a class="mdl-navigation__link" href="">Settings</a>
                 <a class="mdl-navigation__link" href="https://marvelapp.com/5daag7j/screen/46187794">Sign In</a>
-            </nav>                                                                                              
-        </div>                                                                                                  
+            </nav>
+        </div>
         <main class="mdl-layout__content">
             <br class="page-content">
             <!-- Your content goes here -->
@@ -63,12 +63,8 @@
                         </span>
                 </div>
                 <div class="mdl-card__actions">
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
-                        Answer
-                    </a>
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
-                        Comment
-                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">Answer</a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">Comment</a>
                     <!--Read More Button
                     <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
                         <i class="material-icons">chevron_right</i>
@@ -105,12 +101,8 @@
                     Another way is to draw out a picture of everything. The things you see are objects, etc. <a href="http://www.selectbs.com/process-maturity/what-is-object-oriented-design">Here's a web link to learn more.</a>
                 </div>
                 <div class="mdl-card__actions">
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
-                        Answer
-                    </a>
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
-                        Comment
-                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">Answer</a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">Comment</a>
                 </div>
             </div>
 
@@ -126,12 +118,8 @@
                     <iframe class="mmCardVid" src="https://www.youtube.com/embed/9H0-YodumKQ" allowfullscreen></iframe>
                 </div>
                 <div class="mdl-card__actions">
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
-                        Answer
-                    </a>
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
-                        Comment
-                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">Answer</a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">Comment</a>
                 </div>
             </div>
 
@@ -144,12 +132,8 @@
                         </span>
                 </div>
                 <div class="mdl-card__actions">
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">
-                        Dismiss
-                    </a>
-                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">
-                        Comment
-                    </a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400" href="">Answer</a>
+                    <a class="mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect" href="">Comment</a>
                 </div>
             </div>
 
@@ -158,6 +142,52 @@
                     <h3 class="mdl-card__title-text">Welcome to your feed, click the + button to add your first question.</h3>
                 </div>
             </div>
+
+            <!--Javascript to handle answer and comment buttons-->
+            <script>
+                // When the user clicks the button, open the modal
+                function modalAnswerComment(ques){
+                    console.log("in modal ans/com");
+                    console.log(ques);
+                    modal.style.display = "block";
+                    modalContent2.style.display = "block";
+                }
+
+                function hello() {
+                    console.log("hi!");
+                }
+
+                document.addEventListener('click', function () {
+                    var target = event.target;
+                    var answer_buttons = document.getElementsByClassName('answer');
+                    var comment_buttons = document.getElementsByClassName('comment');
+                    var parent = target.parentNode.textContent;
+
+                    if (parent.match("Answer") || parent.match("Comment")) {
+                    }else{
+                        return;
+                    }
+
+                    //title = document.querySelectorAll("h3")[1].textContent
+                    if (parent === "Answer") {
+                        for (var i = 0; i < answer_buttons.length; i++) {
+                            // If the button is the one clicked, then get siblings
+                            if (answer_buttons[i] === target.parentNode) {
+                                var head = target.parentNode.parentNode.parentNode.childNodes[1].querySelector("h3").textContent;
+                                console.log("Answer to "+head);
+                            }
+                        }
+                    } else {
+                        for (var i = 0; i < comment_buttons.length; i++) {
+                            if (comment_buttons[i] === target.parentNode) {
+                                var head = target.parentNode.parentNode.parentNode.childNodes[1].querySelector("h3").textContent;
+                                console.log("Comment to "+head);
+                            }
+                        }
+                    }
+
+                });
+            </script>
 
             <!--FAB
             <button id="mainFAB" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="funct()">
@@ -294,8 +324,23 @@
                     Post Question
                 </button>
                 </div>
-                <!--end modal-->
             </div>
+                <!--end modal content 1-->
+
+                <div id="modalContent2">
+
+                    <div id="whatIsQ">
+                        <h4>What is your question?</h4>
+                        <!-- Simple Textfield -->
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="questionInput">
+                                <label class="mdl-textfield__label">Start with what, why, how...</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
 
             <script>
@@ -307,6 +352,9 @@
 
             // Get modal content 1
                var modalContent1 = document.getElementById('modalContent1');
+
+            // Get modal content 2
+                var modalContent2 = document.getElementById('modalContent2');
 
             // Get the button that opens the modal
                var btn = document.getElementById("mainFAB");
@@ -350,23 +398,21 @@
                     "                        </span>\n" +
                     "                </div>\n" +
                     "                <div class=\"mdl-card__actions\">\n" +
-                    "                    <a class=\"mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400\" href=\"\">\n" +
-                    "                        Answer\n" +
-                    "                    </a>\n" +
-                    "                    <a class=\"mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect\" href=\"\">\n" +
-                    "                        Comment\n" +
-                    "                    </a>\n" +
+                    "                    <a class=\"mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect mdl-color--lime-A400\" href=\"\">Answer</a>\n" +
+                    "                    <a class=\"mdl-button mdl-js-button mdl-typography--text-uppercase mdl-js-ripple-effect\" href=\"\">Comment</a>\n" +
                     "                </div>\n" +
                     "            </div>";
                 var cards = document.getElementById("writeCards").innerHTML = str;
                 modal.style.display = "none";
             }
+
             </script>
 
 
 
 
 
+            </div>
         </main>
     </div>
 
