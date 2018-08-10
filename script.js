@@ -1,4 +1,4 @@
-(document).ready(function(){
+$(document).ready(function(){
 
     var btnShareB = $('.btnShare2');
     var btnShareA = $('.btnShare4');
